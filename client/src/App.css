@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(100deg, #536976, #292e49);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the h1 tag */
+h1 {
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  color: #0370e5; /* Change the text color to blue */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Updated text shadow */
+  animation: fadeIn 1s ease-in-out; /* Add a fadeIn animation */
+  font-family: "Oxygen Mono", monospace;
+}
+
+/* Style for the p tag */
+p {
+  font-size: 1rem; /* Adjust the font size as needed */
+  color: #a1a1a1; /* Change the text color to a dark gray */
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4); /* Updated text shadow */
+  animation: fadeIn 1s ease-in-out; /* Add a fadeIn animation */
+  font-family: "Oxygen Mono", monospace;
+  text-align: center;
+}
+
+/* Style for the span tag */
+span {
+  font-weight: bold; /* Make the text bold */
+  color: #d0582d; /* Change the text color to orange-red */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Updated text shadow */
+  animation: bounce 1s ease-in-out infinite; /* Add a bounce animation */
+  font-family: "Oxygen Mono", monospace;
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Keyframes for bounce animation */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}

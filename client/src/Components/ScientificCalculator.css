@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+
+/* Container Styles */
+.container {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #394867; /* Dark blue background */
+  border: 1px solid #acacac;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Field Styles */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #292e3a; /* Dark gray input background */
+  color: white;
+  outline: none;
+  margin-bottom: 10px;
+  font-family: "Oxygen Mono", monospace;
+}
+
+/* Calculator Buttons Container Styles */
+.btn-container {
+  width: 100%;
+}
+
+/* Individual Button Container Styles */
+.btn-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+/* Button Styles */
+button {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  background: linear-gradient(
+    45deg,
+    #ff6b6b,
+    #ffa647
+  ); /* Gradient background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease; /* Smooth background transition */
+}
+
+/* Hover Effect on Buttons */
+button:hover {
+  background: linear-gradient(
+    45deg,
+    #ff7f50,
+    #ffd700
+  ); /* Gradient background on hover */
+}
+
+/* Shift Button Styles */
+.shift-button {
+  background-color: #444c5b; /* Dark gray for Shift button */
+}
+
+/* Active Shift Button Styles */
+.shift-button.on {
+  color: #ff9800; /* Orange text for active Shift button */
+}
+
+/* On/Off Button Styles */
+button:first-child {
+  background-color: #ff9800; /* Orange On/Off button */
+}
+
+/* Equals Button Styles */
+#isEqualsTo button {
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    #5bc0de,
+    #33d9b2
+  ); /* Gradient background for Equals button */
+  border-radius: 0;
+  font-size: 24px;
+}
+
+.on-off-button.on {
+  background: linear-gradient(
+    45deg,
+    #00cc00,
+    /* Green gradient for On */ #009900
+  );
+  color: white; /* Change text color for On */
+}
+
+.on-off-button.off {
+  background: linear-gradient(
+    45deg,
+    #ff6b6b,
+    /* Red gradient for Off */ #ffa647
+  );
+  color: white; /* Change text color for Off */
+}
+
+/* Shift Button Styles */
+.shift-button.on {
+  background: linear-gradient(
+    45deg,
+    #00cc00,
+    /* Green gradient for Shift On */ #009900
+  );
+  color: white; /* Change text color for Shift On */
+}
+
+.shift-button.off {
+  background: linear-gradient(
+    45deg,
+    #ff6b6b,
+    /* Red gradient for Shift Off */ #ffa647
+  );
+  color: white; /* Change text color for Shift Off */
+}
